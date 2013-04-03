@@ -1,0 +1,19 @@
+s = 0
+stack = []
+d = [1, 5, 2, 5, 5]
+r = range(1, (len(d)+1))
+#print r
+#print len(d), ", ", min(d), ", ", max(d)
+
+for item in r:
+    stack[item] = stack.append(d.pop)    
+    print stack
+    
+"""
+for item in d:
+    #print item
+    if item == 1:
+        s = s + item * 100
+    if item == 5:
+        s = s + item * 50
+    print s """

@@ -1,0 +1,31 @@
+def bonus1(dice):
+    b1 = (dice.count(1) / 3) * 1000
+    #return b1
+    print b1
+    
+def bonusOther(dice):
+    b = (dice.count(2) / 3) * 2 
+    #return b
+    print b
+    
+def score1(dice):
+    s1 = dice.count(1) % 3  * 100 
+    #return s1
+    print s
+    
+def score5(dice):
+    s5 = dice.count(5)%3 * 100 
+    #return s5
+    print s5
+    
+def score(dice):
+    # You need to write this method    
+    s = 0 
+    s = b1 + b + s1 + s5
+    #return s
+    print s 
+     
+score(1, 2, 3)
+score(1, 1, 1)
+score(1, 5, 5)
+score(2, 2, 2)

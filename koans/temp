@@ -1,0 +1,14 @@
+class AboutNewStyleClasses(Koan):
+    class OldStyleClass:
+        "An old style class"
+        # Original class style have been phased out in Python 3.
+    
+    class NewStyleClass(object):
+        "A new style class"
+        # Introduced in Python 2.2
+        #   
+        # Aside from this set of tests, Python Koans sticks exclusively to this
+        # kind of class
+        pass
+
+dir(NewStyleClass)
